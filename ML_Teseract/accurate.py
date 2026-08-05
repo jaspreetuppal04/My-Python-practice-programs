@@ -1,9 +1,6 @@
 import pytesseract
-import matplotlib.pyplot as plt
-# For better accuracy
 import cv2
 import numpy as np
-from PIL import Image
 
 img_cv = cv2.imread("/Users/jaspreetuppal/Downloads/_Years Of Sustainability.PNG")
 
