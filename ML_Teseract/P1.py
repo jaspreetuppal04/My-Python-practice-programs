@@ -15,5 +15,3 @@ text = pytesseract.image_to_string(img)
 print("\nExtracted Text:\n")
 print(text)
 
-text = pytesseract.image_to_string(img)
-print(text)
