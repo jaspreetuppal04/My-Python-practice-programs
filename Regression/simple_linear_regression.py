@@ -6,12 +6,11 @@ X = np.array([1, 2, 3, 4, 5])
 # Output data (dependent variable)
 Y = np.array([2, 4, 6, 8, 10])
 
-# Initially assume slope and intercept are 0
-m = 0
-c = 0
+m = 0 #slope
+c = 0 #intercept
 
 # Learning rate controls how big each update is
-lr = 0.01
+alpha = 0.01
 
 # Number of times we update m and c
 epochs = 1000
@@ -32,10 +31,10 @@ for i in range(epochs):
     dc = (-2/n) * np.sum(Y - Y_pred)
 
     # Update slope
-    m = m - lr * dm
+    m = m - alpha * dm
 
     # Update intercept
-    c = c - lr * dc
+    c = c - alpha * dc
 
 # Final values after training
 print("Slope:", m)
