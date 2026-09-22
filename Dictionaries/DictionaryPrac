@@ -1,0 +1,18 @@
+employee = {
+    "Name" : "Vrajesh",
+    "Age" : 36,
+    "Package" : "24LPA",
+    "Expertiese" : "HR Manager",
+}
+
+def greet(name="Vrajesh"):
+    print("Hello", name)
+
+greet("Vrajesh")
+greet()
+
+for key,value in employee.items():
+    print(key ,":", value)
+
+for index, employee in enumerate(employee):
+    print(index, employee)
